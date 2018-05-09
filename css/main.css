@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	max-height: 100%;
+	overflow: scroll;
+}
+
+h1 {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 100;
+	font-size: 4em;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Exo 2', sans-serif;
+	text-align: center;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	background-color: rgba(60, 60, 60, 0.5);
+}
+
+h3 {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #7d97ad;
+	text-align: center;
+}
+
+h4 {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+#header {
+	margin-top: 50px;
+	width: 100%;
+	text-align: right;
+	border-bottom: 4px solid #7d97ad;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#header .image {
+	order: 1;
+	width: 25%;
+}
+
+#header .image img {
+	float: left;
+}
+
+#header .text {
+	order:2;
+	padding: 0;
+	text-align: right;
+	width: 70%;
+	margin-bottom: 20px;
+}
+
+#hero {
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+#projects {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.image p {
+	text-align: center;
+	background-color: rgba(60, 60, 60, 0.5);
+}
+
+@media screen and (max-width: 599px) {
+	h1 {
+		font-size: 2em;
+		font-weight: 300;
+	}
+
+	.text {
+		margin: 0 10px 20px 0;
+	}
+
+	#header {
+		margin-top: 20px;
+	}
+
+	#header .image {
+		margin-left: 1em;
+		width: 10%;
+	}
+
+	#header.text {
+		margin-bottom: 20px;
+	}
+
+	#hero {
+		margin-bottom: 50px;
+	}
+
+	.realhero-image {
+		content: url(../img/center-theme-small.jpg);
+		width: 100%;
+		height: 100px;
+	}
+
+	h2 {
+		position: relative;
+		margin-top: -85px;
+	}
+
+	h3 {
+		color: white;
+		line-height: 70px;
+		margin-top: -150px;
+		margin-bottom: 5px;
+	}
+
+	#projects {
+		flex-direction: column;
+		background-color: #7c7c7c;
+	}
+
+	.image {
+		color: white;
+		width: 100%;
+	}
+
+	.first-image, #projects .image img {
+		width: 100%;
+	}
+
+	.image p {
+		position: relative;
+		background-color: rgba(60, 60, 60, 0.5);
+		padding-bottom: 10px;
+	}
+}
+
+@media screen  and (min-width: 600px) and (max-width: 1039px) and (orientation:portrait){
+	h1 {
+		font-size: 2em;
+		font-weight: 300;
+	}
+
+	.text {
+		margin: 0 10px 20px 0;
+	}
+
+	#header {
+		margin-top: 20px;
+	}
+
+	#header .image {
+		margin-left: 1em;
+		width: 10%;
+	}
+
+	#header .text {
+		min-height: 80px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	#hero {
+		margin-bottom: 50px;
+	}
+
+	.realhero-image {
+		content: url(../img/center-theme-small.jpg);
+		width: 100%;
+		height: 100px;
+	}
+
+	h2 {
+		position: relative;
+		margin-top: -85px;
+	}
+
+	h3 {
+		color: white;
+		line-height: 70px;
+		margin-top: -150px;
+		margin-bottom: 5px;
+	}
+
+	#projects {
+		flex-direction: column;
+		background-color: #7c7c7c;
+	}
+
+	.image {
+		color: white;
+		width: 100%;
+	}
+
+	.first-image, #projects .image img{
+		width: 100%;
+	}
+
+	.image p {
+		position: relative;
+		padding-bottom: 10px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 1039px)and (orientation:landscape) {
+	h1 {
+		font-size: 2em;
+		font-weight: 300;
+	}
+
+	h2 {
+		position: relative;
+		margin-top: -85px;
+		font-size: 1.5em;
+		width: 95%;
+	}
+
+	h3 {
+		color: white;
+		line-height: 70px;
+		margin-top: -350px;
+		margin-bottom: 5px;
+	}
+
+	#header .image {
+		margin-left: 1em;
+		width: 10%;
+	}
+
+	#header .text {
+		padding-right: 20px;
+		margin-top: 20px;
+	}
+
+	#hero {
+		margin-bottom: 50px;
+	}
+
+	.realhero-image {
+		content: url(../img/center-theme-dark.jpg);
+		width: 100%;
+	}
+
+	#projects {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: #7c7c7c;
+		padding-bottom: 150px;
+	}
+
+	.image {
+		width: 33%;
+		justify-content: space-between;
+		margin-bottom:30px;
+		color: white;
+	}
+
+	.image p {
+		position: relative;
+		padding-bottom: 10px;
+		font-size: 0.9em;
+		width: 95%;
+	}
+
+	#projects .image img {
+		width: 95%;
+	}
+}
+
+@media screen and (min-width: 1040px) {
+	body {
+		width: 940px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		position: relative;
+		margin-top: -85px;
+		font-size: 1.5em;
+		width: 96%;
+	}
+
+	h3 {
+		line-height: 100px;
+	}
+
+	.image {
+		width: 33%;
+		justify-content: space-between;
+		margin-bottom:30px;
+		color: white;
+	}
+
+	.image p {
+		position: relative;
+		padding-bottom: 10px;
+		width: 96%;
+	}
+}
